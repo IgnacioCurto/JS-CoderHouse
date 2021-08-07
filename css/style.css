@@ -51,3 +51,8 @@ li{
     padding: 5px;
     margin: 5px;
 }
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+}
