@@ -9,20 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <title>4to</title>
+    <title>Classroom</title>
 </head>
 <body>
 
     <!-- Header -->
     <header class="bg-primary text-center py-3 mb-4">
         <div class="header container row justify-content-center">
-            <a href="index.html" class="col col-4"><img src="/html/img/logo.png" alt=""></a>
-            <h1 class="col mt-4 offset-1 col-7 align-self-middle fw-light text-white">Colegio Lorem Ipsum</h1>
+            <a href="index.html" class="col col-4"><img src="/img/logo.png" alt=""></a>
+            <h1 class="col fw-bold mt-4 col-7 align-self-middle fw-light text-white">Colegio Lorem Ipsum</h1>
         </div>
     </header>
-    <h2>Alumnos 4º grado</h2>
+    <p class="text-dark text-center fs-2 mt-3">Alumnos</p>
     
-    
+    <!-- Form -->
     <div class="container-form">
         <form id="user-form">
             <input id="user-form__input-id" class="mt-2 p-2 border border-1 rounded bg-light " type="number" placeholder="Ingresa el número que le corresponde en la lista" />
@@ -30,11 +30,11 @@
             <input id="user-form__input-surname" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el apellido" />
             <input id="user-form__input-grade" class="mt-2 p-2 border border-1 rounded bg-light" type="number" placeholder="Ingresa la nota" />
             <div class="btn-container">  
-                <button class="pushBtn" type="submit">Nuevo alumno</button>
+                <button class="pushBtn mb-4" type="submit">Nuevo alumno</button>
             </div>
         </form>
     </div>
-
+    <!-- Esta sección se crea directaménte desde JS -->
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

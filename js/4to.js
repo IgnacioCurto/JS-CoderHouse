@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     //Crea una tabla en el elemento recibido por parametro y con el id recibido.
     function createTable(element, id) {
-        const table = `<table id=${id} class='offset-2 col-6 w-40'></table>`;
+        const table = `<table id=${id} class='offset-2 col-8 w-40 mb-4'></table>`;
         $(element).append(table);
     }
 

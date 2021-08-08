@@ -5,9 +5,11 @@ body{
 
 h1{
     font-family:'Lato', sans-serif ;
+    font-weight: bolder;
     font-size: 45px;
     color: rgb(37, 38, 40);
     text-align: left;
+    letter-spacing: 3px;
 }
 h2{
     color: rgb(37, 38, 40);
@@ -65,11 +67,9 @@ form {
     width: 40%;
 }
 
-.container-form input {
-    background-color: rgb(0, 255, 30);
-}
-
 table {
+    background-color: rgb(227, 238, 255);
+    border-radius: 15px;
     margin-top: 20px;
     border-collapse: collapse;
     width: 100%;
