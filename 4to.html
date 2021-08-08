@@ -16,47 +16,29 @@
     <!-- Header -->
     <header class="bg-primary text-center py-3 mb-4">
         <div class="header container row justify-content-center">
-            <img class="col col-4" src="/html/img/logo.png" alt="">
+            <a href="index.html" class="col col-4"><img src="/html/img/logo.png" alt=""></a>
             <h1 class="col mt-4 offset-1 col-7 align-self-middle fw-light text-white">Colegio Lorem Ipsum</h1>
         </div>
     </header>
-    <h1>Alumnos 4º grado</h1>
-
-
+    <h2>Alumnos 4º grado</h2>
+    
+    
     <div class="container-form">
         <form id="user-form">
-            <input type="number" id="user-form__input-id">
-            <input type="text" id="user-form__input-name">
-            <input type="text" id="user-form__input-grade">
-            <button type="submit">Agregar</button>
+            <input id="user-form__input-id" class="mt-2 p-2 border border-1 rounded bg-light " type="number" placeholder="Ingresa el número que le corresponde en la lista" />
+            <input id="user-form__input-name" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el nombre" />
+            <input id="user-form__input-surname" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el apellido" />
+            <input id="user-form__input-grade" class="mt-2 p-2 border border-1 rounded bg-light" type="number" placeholder="Ingresa la nota" />
+            <div class="btn-container">  
+                <button class="pushBtn" type="submit">Nuevo alumno</button>
+            </div>
         </form>
     </div>
 
 
-    
-    <div class="btn-container">  
-        <button class="pushBtn" onclick="push()">Nuevo alumno</button>
-    </div>
-    <div class="container text-danger">
-        <div class="row">
-            <div class="col-4">
-                <p>Nombre</p>
-            </div>
-            <div class="col-4">
-                <p>Nota</p>
-            </div>
-            <div class="col-4">
-                <p>Promedio</p>
-            </div>
-        </div>
-    </div>
-    
-    <div id="classroom" class="container">
-        <!--En esta sección se agregan los alumnos desde JS-->
-    </div>
 
-
-    <script src="/js/desafio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/4to.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
