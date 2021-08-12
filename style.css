@@ -80,3 +80,14 @@ td, th{
     text-align: center;
     padding: 8px;
 }
+
+
+.aprobado{
+    border-top: green;
+    border-bottom: green;
+    background-color: rgb(226, 255, 224);
+}
+
+.desaprobado{
+    background-color: rgb(255, 224, 224);
+}

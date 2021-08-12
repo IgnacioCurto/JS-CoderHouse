@@ -96,22 +96,25 @@ $(document).ready(function(){
         });
     }
 
-
     function populateTableData(id, name, surname, grade){
-        return `
-        <td class='border border1 border-light'>${id} </td>
-        <td class='border border1 border-light'>${name} </td>
-        <td class='border border1 border-light'> ${surname} </td>
-        <td class='border border1 border-light'>${grade}</td>
-        `
+        if (grade>=6){
+            return`
+            <td class='aprobado border border1 border-success'>${id} </td>
+            <td class='aprobado border border1 border-success'>${name} </td>
+            <td class='aprobado border border1 border-success'> ${surname} </td>
+            <td class='aprobado border border1 border-success'>${grade}</td>
+            ` 
+        }else{
+            return`
+            <td class='desaprobado border border1 border-danger'>${id} </td>
+            <td class='desaprobado border border1 border-danger'>${name} </td>
+            <td class='desaprobado border border1 border-danger'> ${surname} </td>
+            <td class='desaprobado border border1 border-danger'>${grade}</td>
+            ` 
+        }  
     }
 
     
-    for(var i = 0; i< listUser.length; i++){
-        
-        if(listUser[i].grade > 6){
-            $('tr').css({backgroundColor: '#F29595'})
-        }
-    }
+
 });
 
