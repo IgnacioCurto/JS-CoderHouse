@@ -1,6 +1,23 @@
 //Asegura que el documento está listo para interactuar con el DOM
 $(document).ready(function(){
 
+    //Declaramos la url que vamos a usar para el GET
+    const URLGET   = "https://jsonplaceholder.typicode.com/posts"
+    //Declaramos la información a enviar
+    const infoPost =  { nombre: "Ana", profesion: "Programadora" }
+    //Agregamos un botón con jQuery
+    $("body").prepend('<button id="btn1">POST</button>');
+    //Escuchamos el evento click del botón agregado
+    $("#btn1").click(() => { 
+        $.post(URLGET, infoPost ,(respuesta, estado) => {
+            if(estado === "success"){
+                $("body").prepend(`<div>
+    Guardado:${respuesta.nombre}
+    </div>`);
+            }  
+        });
+    });
+
 
     const form = $('#user-form');
     const inputId = $('#user-form__input-id');
@@ -36,9 +53,6 @@ $(document).ready(function(){
     form.submit(function(event) {
         event.preventDefault();
     
-    
-
-
         const id = inputId.val();
         const name = inputName.val();
         const surname = inputSurname.val();
@@ -113,8 +127,19 @@ $(document).ready(function(){
             ` 
         }  
     }
-
-    
-
+    $(document).ready(function(){
+        $('#user-form input[type="text"]').blur(function(){
+            if(!$(this).val()){
+                $(this).addClass("error");
+                $('.pushBtn').addClass(' btn disabled')
+            } else{
+                $(this).removeClass("error");
+                $('.pushBtn').removeClass(' btn disabled')
+            }
+        });
+    });
+    $(".pushBtn").click(() => { 
+        $("#tr-${user.id}").toggle("fast");
+    })
 });
 

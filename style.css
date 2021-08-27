@@ -1,6 +1,7 @@
 body{
     background-color: aliceblue;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 h1{
@@ -72,7 +73,6 @@ table {
     border-radius: 15px;
     margin-top: 20px;
     border-collapse: collapse;
-    width: 100%;
 }
 
 td, th{
@@ -90,4 +90,11 @@ td, th{
 
 .desaprobado{
     background-color: rgb(255, 224, 224);
+}
+
+.error{
+    outline: 1px solid red;
+}  
+.testttt{
+    background-color: blueviolet;
 }
