@@ -138,8 +138,5 @@ $(document).ready(function(){
             }
         });
     });
-    $(".pushBtn").click(() => { 
-        $("#tr-${user.id}").toggle("fast");
-    })
 });
 
