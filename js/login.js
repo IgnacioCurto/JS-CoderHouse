@@ -16,6 +16,8 @@ $(document).ready(function(){
     }
     //Declaramos la información a enviar
     const infoPost =  { nombre: "Ana Díaz", profesion: "Profesora en Ciencias Sociales" }
+
+    var result = infoPost.profesion.substr(infoPost.profesion.indexOf(" ") + 4);
     //Escuchamos el evento click del botón agregado
     $("#btn1").click(() => { 
         $.post(URLGET, infoPost ,(respuesta, estado) => {
@@ -29,6 +31,8 @@ $(document).ready(function(){
                 $('.teacher').hide()
                 $('.modal-header').append(`<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" alt="avatar" class="rounded-circle img-responsive"></img> `)
                 $('.btndiv').append(`<button class="btn bg-transparent btn-rounded border border-white text-white" id="btn2">Log out</button>`)
+                $('.main').prepend(`<h4 class='text-secondary mb-4'>${result}</h4>`)
+                $('.classHeader').append(`<h4 class='text-secondary'>${result}</h4>`)
             }  
         });
     });
