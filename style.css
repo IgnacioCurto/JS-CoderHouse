@@ -49,6 +49,9 @@ h2{
     transform: scale(1.05);
 }
 
+.alumnos{
+    font-size: 30px;
+}
 .classroom-container{
     background-color: rgb(241, 249, 255);
     border-radius: 15px;
