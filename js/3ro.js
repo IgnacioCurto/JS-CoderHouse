@@ -17,8 +17,8 @@ $(document).ready(function(){
 
     let listUser = [];
 
-    if (localStorage.getItem('users')) {
-        listUser = JSON.parse(localStorage.getItem('users'));
+    if (localStorage.getItem('alumnos3ro')) {
+        listUser = JSON.parse(localStorage.getItem('alumnos3ro'));
     }
 
     //Function para guardar alumnos en el local storage
@@ -44,18 +44,18 @@ $(document).ready(function(){
         const user = new User(id, name, surname, grade);
 
 
-    if(!localStorage.getItem('users')){
+    if(!localStorage.getItem('alumnos3ro')){
         createTable('body', 'user-table');
         createTableHeader(['Id', 'Nombre', 'Apellido', 'Nota'], '#user-table');
     }
-        saveToStorage('users', user);
+        saveToStorage('alumnos3ro', user);
         createRowUser(user, '#user-table');
     });
 
-    if(localStorage.getItem('users')){
+    if(localStorage.getItem('alumnos3ro')){
         createTable('body', 'user-table');
         createTableHeader(['Id', 'Nombre', 'Apellido', 'Nota'], '#user-table');
-        populateRows(getUserFromStorage('users'), '#user-table');
+        populateRows(getUserFromStorage('alumnos3ro'), '#user-table');
     }
 
 

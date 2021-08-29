@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Classroom</title>
+</head>
+<body>
+
+   <!-- Header --->
+   <header class="bg-primary text-center py-3 mb-4">
+    <div class="header container row justify-content-center">
+        <a href="index.html" class="col col-4"><img src="img/logo.png" alt=""></a>
+        <h1 class="col fw-bold mt-4 col-7 align-self-middle fw-light text-white">Colegio Lorem Ipsum</h1>
+    </div>
+    
+    <!--Modal: Login with Avatar Form-->
+    <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Header-->
+        <div class="modal-header">
+          <img src="/img/default.png" width="270px" alt="avatar" class="teacher rounded-circle img-responsive">
+        </div>
+        <!--Body-->
+        <div class="modal-body text-center mb-1">
+          <div class="text-center mt-4">
+            <button class="btn btn-cyan mt-1" id="btn1">Login <i class="fas fa-sign-in ml-1"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Content-->
+    </div>
+    </div>
+    <!--Modal: Login with Avatar Form-->
+
+    <div class="text-center">
+    <a href="" class="loginBtn btn btn-light btn-rounded" data-toggle="modal" data-target="#modalLoginAvatar">Login</a>
+    </div>
+  </header>
+    <p class="text-dark text-center fs-2 mt-3">Alumnos 6° grado</p>
+    
+    <!-- Form -->
+    <div class="container-form">
+        <form id="user-form">
+            <input id="user-form__input-id" class="mt-2 p-2 border border-1 rounded bg-light " type="number" placeholder="Ingresa el número que le corresponde en la lista" />
+            <input id="user-form__input-name" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el nombre" />
+            <input id="user-form__input-surname" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el apellido" />
+            <input id="user-form__input-grade" class="mt-2 p-2 border border-1 rounded bg-light" type="number" min="0" max="10" placeholder="Ingresa la nota" />
+            <div class="btn-container">  
+                <button class="pushBtn btn-primary" type="submit">Nuevo alumno</button>
+            </div>
+        </form>
+    </div>
+    <!-- Esta sección se crea directaménte desde JS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/6to.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
