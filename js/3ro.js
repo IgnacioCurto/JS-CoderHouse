@@ -122,13 +122,16 @@ $(document).ready(function(){
         if(this.checked) {
             $('.aprobado').addClass('border-success')
             $('.desaprobado').addClass('border-danger')
+            $('.aprobado').css({backgroundColor:'rgb(241, 255, 234)'})
+            $('.desaprobado').css({backgroundColor:'rgb(255, 234, 234)'})
 
         } else{
             $('.aprobado').removeClass('border-success')
             $('.desaprobado').removeClass('border-danger')
+            $('.aprobado').css({backgroundColor:'rgb(244, 250, 255)'})
+            $('.desaprobado').css({backgroundColor:'rgb(244, 250, 255)'})
         }
     });
-
 
 });
 

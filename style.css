@@ -79,7 +79,6 @@ table {
 }
 
 td, th{
-    border: 1px solid rgba(169, 169, 169, 0.685);
     text-align: center;
     padding: 8px;
 }
@@ -87,6 +86,10 @@ td, th{
 
 td{
     background-color: rgb(244, 250, 255);
+}
+
+.aprobado{
+    
 }
 
 .error{
