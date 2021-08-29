@@ -48,13 +48,8 @@ $(document).ready(function(){
         createTable('body', 'user-table');
         createTableHeader(['Id', 'Nombre', 'Apellido', 'Nota'], '#user-table');
     }
-
-
         saveToStorage('users', user);
-
-
         createRowUser(user, '#user-table');
-
     });
 
     if(localStorage.getItem('users')){
