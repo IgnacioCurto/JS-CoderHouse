@@ -91,17 +91,17 @@ $(document).ready(function(){
     function populateTableData(id, name, surname, grade){
         if (grade>=6){
             return`
-            <td class='aprobado border border1 border-success'>${id} </td>
-            <td class='aprobado border border1 border-success'>${name} </td>
-            <td class='aprobado border border1 border-success'> ${surname} </td>
-            <td class='aprobado border border1 border-success'>${grade}</td>
+            <td class='aprobado border border1'>${id} </td>
+            <td class='aprobado border border1'>${name} </td>
+            <td class='aprobado border border1'> ${surname} </td>
+            <td class='aprobado border border1'>${grade}</td>
             ` 
         }else{
             return`
-            <td class='desaprobado border border1 border-danger'>${id} </td>
-            <td class='desaprobado border border1 border-danger'>${name} </td>
-            <td class='desaprobado border border1 border-danger'> ${surname} </td>
-            <td class='desaprobado border border1 border-danger'>${grade}</td>
+            <td class='desaprobado border border1'>${id} </td>
+            <td class='desaprobado border border1'>${name} </td>
+            <td class='desaprobado border border1'> ${surname} </td>
+            <td class='desaprobado border border1'>${grade}</td>
             ` 
         }  
     }
@@ -116,5 +116,20 @@ $(document).ready(function(){
             }
         });
     });
+
+    //Switch aprobados
+    var checkbox = document.getElementById('test');
+
+    checkbox.addEventListener( 'change', function() {
+        if(this.checked) {
+            $('.aprobado').addClass('border-success')
+            $('.desaprobado').addClass('border-danger')
+
+        } else{
+            $('.aprobado').removeClass('border-success')
+            $('.desaprobado').removeClass('border-danger')
+        }
+    });
+
 });
 
