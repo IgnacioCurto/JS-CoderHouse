@@ -13,8 +13,8 @@
 </head>
 <body>
 
-   <!-- Header --->
-   <header class="bg-primary text-center py-2 mb-4 d-flex justify-content-center">
+  <!-- Header --->
+  <header class="bg-primary text-center py-2 mb-4 d-flex justify-content-center">
     <div class="header container row w-100">
         <a href="index.html" class="col col-4"><img src="img/logo.png" alt=""></a>
         <h1 class="col fw-bold mt-4 col-6 align-self-middle fw-light text-white">Colegio Lorem Ipsum</h1>
@@ -24,31 +24,32 @@
     </div>
     
     <!--Modal: Login with Avatar Form-->
-    <div class="modal fade mt-5 " id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
-        <!--Content-->
-        <div class="modal-content">
+    <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+      <!--Content-->
+      <div class="modal-content">
 
-          <!--Header-->
-          <div class="modal-header">
-            <img src="img/default.png" width="270px" alt="avatar" class="teacher rounded-circle img-responsive">
-          </div>
-          <!--Body-->
-          <div class="modal-body text-center">
-            <button class="btn align-middle" id="btn1">Login <i class="fas fa-sign-in ml-1"></i></button>
-          </div>
-
+        <!--Header-->
+        <div class="modal-header">
+          <img src="img/default.png" width="270px" alt="avatar" class="teacher rounded-circle img-responsive">
         </div>
-        <!--/.Content-->
+        <!--Body-->
+        <div class="modal-body text-center mb-1">
+          <div class="text-center mt-4">
+            <button class="btn btn-cyan mt-1" id="btn1">Login <i class="fas fa-sign-in ml-1"></i></button>
+          </div>
+        </div>
+
       </div>
+      <!--/.Content-->
     </div>
-
-
-    
+    </div>
+    <!--Modal: Login with Avatar Form-->
   </header>
-  <section class="classHeader text-center">
-    <p class="alumnos fs-2 mt-3">Alumnos 4° grado</p>
-  </section>
+    <section class="classHeader text-center">
+      <p class="alumnos fs-2 mt-3">Alumnos 1° grado</p>
+    </section>
+    
     
     <!-- Form -->
     <div class="container-form">
@@ -57,7 +58,7 @@
             <input id="user-form__input-name" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el nombre" />
             <input id="user-form__input-surname" class="mt-2 p-2 border border-1 rounded bg-light" type="text" placeholder="Ingresa el apellido" />
             <input id="user-form__input-grade" class="mt-2 p-2 border border-1 rounded bg-light" type="number" min="0" max="10" placeholder="Ingresa la nota" />
-            <div class="btn-container">  
+            <div class="btn-container text-center">  
                 <button class="pushBtn btn-primary" type="submit">Nuevo alumno</button>
             </div>
         </form>
@@ -73,10 +74,9 @@
     </div>
     <!-- Esta sección se crea directaménte desde JS -->
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/4to.js"></script>
+    <script src="js/1ro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
