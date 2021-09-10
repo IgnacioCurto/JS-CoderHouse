@@ -1,7 +1,6 @@
 //Asegura que el documento está listo para interactuar con el DOM
 $(document).ready(function(){
 
-
     const form = $('#user-form');
     const inputId = $('#user-form__input-id');
     const inputName = $('#user-form__input-name');
@@ -133,5 +132,6 @@ $(document).ready(function(){
         }
     });
 
+    
 });
 
