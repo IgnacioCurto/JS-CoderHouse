@@ -131,6 +131,13 @@ $(document).ready(function(){
             $('.desaprobado').css({backgroundColor:'rgb(244, 250, 255)'})
         }
     });
+    
+
+    console.log(getUserFromStorage('alumnos1ro'))
+    object1 = JSON.parse(localStorage.getItem("alumnos1ro"))[0]
+    console.log(object1)
+    console.log(object1.surname)
+
 
     
 });

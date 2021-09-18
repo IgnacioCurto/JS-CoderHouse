@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <!----- Header ------>
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark">
+            <a href="index.html" class="navbar-brand"><span class="material-icons">school</span> Lorem<b>Ipsum</b></a>  		
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
+                <div class="navbar-nav ml-auto">
+                <a href="index.html" class="nav-item nav-link"><i class="fa fa-users"></i><span>Classrooms</span></a>
+                <a href="charts.html" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Reports</span></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+                <div class="btndiv text-center m-2">
+                    <a href="" class="loginBtn btn bg-transparent btn-rounded border border-white text-white" data-toggle="modal" data-target="#modalLoginAvatar">Login</a>
+                </div>
+                </div>
+            </div>
+            </nav>
+    
+            <!--Login Modal-->
+            <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <img src="img/default.png" width="270px" alt="avatar" class="teacher rounded-circle img-responsive">
+                </div>
+                <div class="modal-body text-center mb-1">
+                    <div class="text-center mt-4">
+                    <button class="btn btn-cyan mt-1" id="btn1">Login</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </header>
+
+
+    <section class="main text-center">
+        <h1 class="text-center">Rendimientos</h1>
+    </section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 mt-5">
+                <h2>Alumnos 1ro</h2>
+                <canvas id="chart1" width="200"></canvas>
+            </div>
+            <div class="col-6 mt-5">
+                <h2>Alumnos 2do</h2>
+                <canvas id="chart2" width="200"></canvas>
+            </div>
+            <div class="col-6 mt-5">
+                <h2>Alumnos 3ro</h2>
+                <canvas id="chart3" width="200"></canvas>
+            </div>
+            <div class="col-6 mt-5">
+                <h2>Alumnos 4to</h2>
+                <canvas id="chart4" width="200"></canvas>
+            </div>
+            <div class="col-6 mt-5">
+                <h2>Alumnos 5to</h2>
+                <canvas id="chart5" width="200"></canvas>
+            </div>
+            <div class="col-6 mt-5">
+                <h2>Alumnos 6to</h2>
+                <canvas id="chart6" width="200"></canvas>
+            </div>
+            <div class="col-6 mt-5">
+                <h2>Alumnos 7mo</h2>
+                <canvas id="chart7" width="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
