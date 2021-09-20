@@ -1,4 +1,4 @@
-//Asegura que el documento está listo para interactuar con el DOM
+
 $(document).ready(function(){
 
     const form = $('#user-form');
@@ -114,7 +114,7 @@ $(document).ready(function(){
         }
     });
 
-    //Switch aprobados
+    //Switch aprobados/desaprobados
     var checkbox = document.getElementById('test');
 
     checkbox.addEventListener( 'change', function() {
@@ -131,14 +131,5 @@ $(document).ready(function(){
             $('.desaprobado').css({backgroundColor:'rgb(244, 250, 255)'})
         }
     });
-    
-
-    console.log(getUserFromStorage('alumnos1ro'))
-    object1 = JSON.parse(localStorage.getItem("alumnos1ro"))[0]
-    console.log(object1)
-    console.log(object1.surname)
-
-
-    
 });
 

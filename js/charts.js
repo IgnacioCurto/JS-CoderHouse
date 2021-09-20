@@ -1,13 +1,14 @@
 
+//Funciones para guardar los alumnos dinámicamente
 
 function CreateAlumno1(){
     let getAlumnos1 = JSON.parse(localStorage.getItem("alumnos1ro"))
     for (var i = 0; i < getAlumnos1.length; i++){
         this["alumno1_"+i] = getAlumnos1[i];
         if (typeof ["alumno1_"+i] !== 'undefined'){
-            console.log('nipple')
+            console.log('success')
         } else{
-            console.log('nepis')
+            console.log('---')
         }
     }
 }
@@ -60,18 +61,7 @@ CreateAlumno5()
 CreateAlumno6()
 CreateAlumno7()
 
-
-
-
-
-
-
-
-if (typeof i === 'undefined') {
-    console.log('detected')
-}
-
-
+//Se llaman los charts desde HTML
 let chart1 = document.getElementById('chart1').getContext('2d')
 let chart2 = document.getElementById('chart2').getContext('2d')
 let chart3 = document.getElementById('chart3').getContext('2d')
@@ -80,9 +70,10 @@ let chart5 = document.getElementById('chart5').getContext('2d')
 let chart6 = document.getElementById('chart6').getContext('2d')
 let chart7 = document.getElementById('chart7').getContext('2d')
 
+
+//------------------------------------------------------------1er grado
 let alumnos1Performance = new Chart(chart1, {
-    
-    type:'bar', //'pie'
+    type:'bar',
     data:{
         labels:[alumno1_0.surname, alumno1_1.surname, alumno1_2.surname, alumno1_3.surname, alumno1_4.surname, alumno1_5.surname],
         datasets:[{
@@ -117,6 +108,7 @@ let alumnos1Performance = new Chart(chart1, {
     },
 });
 
+//------------------------------------------------------------2do grado
 let alumnos2Performance = new Chart(chart2, {
     type: 'bar',
     data:{
@@ -153,6 +145,7 @@ let alumnos2Performance = new Chart(chart2, {
     },
 });
 
+//------------------------------------------------------------3er grado
 let alumnos3Performance = new Chart(chart3, {
     type: 'bar',
     data:{
@@ -189,6 +182,7 @@ let alumnos3Performance = new Chart(chart3, {
     },
 });
 
+//------------------------------------------------------------4to grado
 let alumnos4Performance = new Chart(chart4, {
     type: 'bar',
     data:{
@@ -225,6 +219,7 @@ let alumnos4Performance = new Chart(chart4, {
     },
 });
 
+//------------------------------------------------------------5to grado
 let alumnos5Performance = new Chart(chart5, {
     type: 'bar',
     data:{
@@ -261,6 +256,7 @@ let alumnos5Performance = new Chart(chart5, {
     },
 });
 
+//------------------------------------------------------------6to grado
 let alumnos6Performance = new Chart(chart6, {
     type: 'bar',
     data:{
@@ -297,6 +293,7 @@ let alumnos6Performance = new Chart(chart6, {
     },
 });
 
+//------------------------------------------------------------7mo grado
 let alumnos7Performance = new Chart(chart7, {
     type: 'bar',
     data:{
