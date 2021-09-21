@@ -35,11 +35,11 @@ $(document).ready(function(){
                         <div class="nav-item dropdown login">
                         <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action login"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" class="avatar" alt="Avatar"> ${respuesta.nombre} <b class="caret"></b></a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item login"><i class="fa fa-user-o"></i> Profile</a>
-                                <a href="#" class="dropdown-item login"><i class="fa fa-calendar-o"></i> Calendar</a>
-                                <a href="#" class="dropdown-item login"><i class="fa fa-sliders"></i> Settings</a>
+                                <a href="#" class="dropdown-item login"><i class="fa fa-user-o"></i> Perfil</a>
+                                <a href="#" class="dropdown-item login"><i class="fa fa-calendar-o"></i> Calendario</a>
+                                <a href="#" class="dropdown-item login"><i class="fa fa-sliders"></i> Configuración</a>
                                 <div class="divider dropdown-divider"></div>
-                                <a href="#" class="dropdown-item login" id="logout"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                                <a href="#" class="dropdown-item login" id="logout"><i class="material-icons">&#xE8AC;</i> Cerrar sesión</a>
                             </div>
                         </div>
                         `);

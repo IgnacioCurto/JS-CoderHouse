@@ -19,18 +19,19 @@
         <!----- Header ------>
         <header>
             <nav class="navbar navbar-expand-xl navbar-dark">
-            <a href="index.html" class="navbar-brand"><span class="material-icons">school</span> <b>JS</b>chool</a>		
+            <a href="index.html" class="navbar-brand"><span class="material-icons">school</span> <b>JS</b>chool</a>
+            <button class="btn btn-rounded btn-light" id='TestMode'>Modo de prueba</button>		
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
             <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
                 <div class="navbar-nav ml-auto">
-                <a href="index.html" class="nav-item nav-link"><i class="fa fa-users"></i><span>Classrooms</span></a>
-                <a href="charts.html" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Reports</span></a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+                <a href="index.html" class="nav-item nav-link"><i class="fa fa-users"></i><span>Salas</span></a>
+                <a href="charts.html" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Reportes</span></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notificaciones</span></a>
                 <div class="btndiv text-center m-2">
-                    <a href="" class="loginBtn btn bg-transparent btn-rounded border border-white text-white" data-toggle="modal" data-target="#modalLoginAvatar">Login</a>
+                    <a href="" class="loginBtn btn bg-transparent btn-rounded border border-white text-white" data-toggle="modal" data-target="#modalLoginAvatar">Ingresar</a>
                 </div>
                 </div>
             </div>
@@ -53,38 +54,38 @@
             </div>
         </header>
 
-
+    <!--------Charts-------->
+    <h1 class="text-center title">Desempeño de alumnos</h1>
     <section class="main text-center">
-        <h1 class="text-center">Rendimientos</h1>
     </section>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-6 mt-5">
-                <h2>Alumnos 1ro</h2>
+                <h2 class="subtitle">1° grado</h2>
                 <canvas id="chart1" width="200"></canvas>
             </div>
             <div class="col-6 mt-5">
-                <h2>Alumnos 2do</h2>
+                <h2 class="subtitle">2° grado</h2>
                 <canvas id="chart2" width="200"></canvas>
             </div>
             <div class="col-6 mt-5">
-                <h2>Alumnos 3ro</h2>
+                <h2 class="subtitle">3° grado</h2>
                 <canvas id="chart3" width="200"></canvas>
             </div>
             <div class="col-6 mt-5">
-                <h2>Alumnos 4to</h2>
+                <h2 class="subtitle">4° grado</h2>
                 <canvas id="chart4" width="200"></canvas>
             </div>
             <div class="col-6 mt-5">
-                <h2>Alumnos 5to</h2>
+                <h2 class="subtitle">5° grado</h2>
                 <canvas id="chart5" width="200"></canvas>
             </div>
             <div class="col-6 mt-5">
-                <h2>Alumnos 6to</h2>
+                <h2 class="subtitle">6° grado</h2>
                 <canvas id="chart6" width="200"></canvas>
             </div>
             <div class="col-6 mt-5">
-                <h2>Alumnos 7mo</h2>
+                <h2 class="subtitle">7° grado</h2>
                 <canvas id="chart7" width="200"></canvas>
             </div>
         </div>
@@ -95,5 +96,6 @@
     <script src="js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/charts.js"></script>
+    <script src="js/testMode.js"></script>
 </body>
 </html>

@@ -5,11 +5,6 @@ function CreateAlumno1(){
     let getAlumnos1 = JSON.parse(localStorage.getItem("alumnos1ro"))
     for (var i = 0; i < getAlumnos1.length; i++){
         this["alumno1_"+i] = getAlumnos1[i];
-        if (typeof ["alumno1_"+i] !== 'undefined'){
-            console.log('success')
-        } else{
-            console.log('---')
-        }
     }
 }
 
@@ -77,7 +72,7 @@ let alumnos1Performance = new Chart(chart1, {
     data:{
         labels:[alumno1_0.surname, alumno1_1.surname, alumno1_2.surname, alumno1_3.surname, alumno1_4.surname, alumno1_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno1_0.grade,
                 alumno1_1.grade,
@@ -114,7 +109,7 @@ let alumnos2Performance = new Chart(chart2, {
     data:{
         labels:[alumno2_0.surname, alumno2_1.surname, alumno2_2.surname, alumno2_3.surname, alumno2_4.surname, alumno2_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno2_0.grade,
                 alumno2_1.grade,
@@ -151,7 +146,7 @@ let alumnos3Performance = new Chart(chart3, {
     data:{
         labels:[alumno3_0.surname, alumno3_1.surname, alumno3_2.surname, alumno3_3.surname, alumno3_4.surname, alumno3_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno3_0.grade,
                 alumno3_1.grade,
@@ -188,7 +183,7 @@ let alumnos4Performance = new Chart(chart4, {
     data:{
         labels:[alumno4_0.surname, alumno4_1.surname, alumno4_2.surname, alumno4_3.surname, alumno4_4.surname, alumno4_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno4_0.grade,
                 alumno4_1.grade,
@@ -225,7 +220,7 @@ let alumnos5Performance = new Chart(chart5, {
     data:{
         labels:[alumno5_0.surname, alumno5_1.surname, alumno5_2.surname, alumno5_3.surname, alumno5_4.surname, alumno5_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno5_0.grade,
                 alumno5_1.grade,
@@ -262,7 +257,7 @@ let alumnos6Performance = new Chart(chart6, {
     data:{
         labels:[alumno6_0.surname, alumno6_1.surname, alumno6_2.surname, alumno6_3.surname, alumno6_4.surname, alumno6_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno6_0.grade,
                 alumno6_1.grade,
@@ -299,7 +294,7 @@ let alumnos7Performance = new Chart(chart7, {
     data:{
         labels:[alumno7_0.surname, alumno7_1.surname, alumno7_2.surname, alumno7_3.surname, alumno7_4.surname, alumno7_5.surname],
         datasets:[{
-            label: 'notas',
+            label: 'nota',
             data: [
                 alumno7_0.grade,
                 alumno7_1.grade,

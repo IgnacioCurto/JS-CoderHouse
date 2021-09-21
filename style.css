@@ -21,6 +21,19 @@ h2{
     text-align: center;
 }
 
+tr{
+	background-color: #d5e6ff;
+}
+
+.title{
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+}
+
+.subtitle{
+    font-size: 2rem
+}
+
 .card{
     transition: .4s ease;
 }
@@ -57,7 +70,7 @@ h2{
     font-size: 30px;
 }
 .classroom-container{
-    background-color: rgb(241, 249, 255);
+    background-color: rgb(227, 238, 255);
     border-radius: 15px;
     width: 98%;
     margin: auto;
@@ -185,34 +198,7 @@ td{
 	font-size: 25px;
 	margin-right: 5px;
 }
-.search-box {
-	position: relative;
-}	
-.search-box input {
-	padding-right: 35px;
-	min-height: 38px;
-	border: none;
-	background: #faf7fd;
-	border-radius: 3px !important;
-}
-.search-box input:focus {		
-	background: #fff;
-	box-shadow: none;
-}
-.search-box .input-group-addon {
-	min-width: 35px;
-	border: none;
-	background: transparent;
-	position: absolute;
-	right: 0;
-	z-index: 9;
-	padding: 10px 7px;
-	height: 100%;
-}
-.search-box i {
-	color: #a0a5b1;
-	font-size: 19px;
-}
+
 .navbar .nav-item i {
 	font-size: 18px;
 }
